@@ -1,6 +1,6 @@
 # Stoic-API-Quote-Gen
 
-### Live page - [Here](https://micheal-wooler.com/apps/passwordgen/passwordgen.html). 
+### Live page - [Here](https://micheal-wooler.com/apps/stoicquotegen/index.html). 
 
 ***
 
