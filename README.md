@@ -1,0 +1,1 @@
+# Stoic-API-Quote-Gen
