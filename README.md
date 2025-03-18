@@ -4,7 +4,7 @@
 
 ***
 
-Uses a stoic quote API to generate and display a quote and it's author. User can toggle between modes, generator or game. The game consists of guessing the correct author of the given quote.
+Uses a stoic quote API to generate and display a quote and it's author. User can toggle between 2 modes, generator or game. The game consists of guessing the correct author of the given quote.
 
 ### Tools/languages used:
 
