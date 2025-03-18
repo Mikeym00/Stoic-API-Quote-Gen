@@ -4,7 +4,7 @@
 
 ***
 
-Allows user to generate a random password string 1-16 characters long. By default, strings are composed of lower-case letters; the user can choose the password length and toggle the inclusion of upper-case letters, numbers, and symbols.
+Uses a stoic quote API to generate and display a quote and it's author. User can toggle between modes, generator or game. The game consists of guessing the correct author of the given quote.
 
 ### Tools/languages used:
 
