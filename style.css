@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.app{
+    margin: 0;
+    height: max(100vh,1000px);
+    background: radial-gradient( 
+        hsl(194, 46%, 25%),
+        hsl(198, 49%, 7%) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-container{
+    margin:  auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.75rem; 
+}
+
+/* ######################################### */
+.modes{
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+label > span{
+    background-color: black;
+    padding-block: 0.5rem;
+    padding-inline: 1.5rem;
+}
+
+#gen > span{
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+#game > span {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+#mode-generator,
+#mode-game{
+    position: fixed;
+opacity: 0;
+pointer-events: none;
+
+}
+
+:checked + span { 
+    background-color: white;
+    color: black;
+ }
+/* ######################################### */
+
+@keyframes clickpromptfade {
+    0%{opacity: 0;}
+    5%{opacity: 1;}
+    30%{opacity: 0;}
+    100%{opacity: 0;}
+}
+/* ######################################### */
+
+#clickprompt{
+    font-size: 1.5rem;
+    animation: clickpromptfade infinite ease-in-out;
+    animation-duration: 15s;
+    animation-direction: reverse;
+}
+
+/* ######################################### */
+
+.displays{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-block: 7rem;
+}
+
+#quote{
+    max-width: 1360px;
+    text-align: left;
+    font-size: 2.25rem;
+}
+
+#author{
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    font-style: italic;
+    text-align: right;
+}
+
+.answer{
+    margin-left: 1rem;
+}
+
+.answers{
+    text-align: left;
+    margin: 0 auto;
+}
+
+.answers > p{
+    margin-inline: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+/* ######################################### */
+
+@media(max-width: 40rem) {
+    .app-container{
+        display: inline-block;
+        font-size: 1.5rem;
+    }  
+    #quote{
+        font-size: 1.75rem;
+    }  
+    #clickprompt{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width: 20rem) {
+    .app-container{
+        font-size: 1.25rem;
+    }  
+    #quote{
+        font-size: 1.5rem;
+        
+    }  
+    .displays{
+        padding-block: 0;
+    }
+    #clickprompt{
+        font-size: 1rem;
+    }
+}
+
+/* ######################################### */
+.app:hover{
+    cursor: pointer;
+}
+
+label:hover{
+    cursor: help;
+    color: hsl(182, 100%, 50%);
+}
+
+.answerhover:active{
+    color: hsl(182, 100%, 50%);
+}
+
+@media (hover: hover) {
+    :focus:not(:button){
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .answerhover:hover{
+        color: hsl(182, 100%, 50%);
+    }
+}
+
+:focus:not(:focus-visible) {
+    outline: 0;
+    box-shadow: none;
+  }

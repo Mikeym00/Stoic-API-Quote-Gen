@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoic Quote Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Philosopher&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css"/> 
+    <Script  src="api.js" defer></Script>
+
+</head>
+<body>
+
+    <main class="app">
+        <div class="app-container">
+            <section class="modes">
+                <fieldset id="modeselect">
+                        <label id="gen" for="mode-generator"><input id="mode-generator" type="radio" name="quote-mode"class="inline"  checked/><span>Generator</span></label>
+                        <label id="game" for="mode-game" ><input id="mode-game" type="radio" name="quote-mode" class="inline" /><span>Game</span></label>
+                </fieldset> 
+            </section>
+            <section class="displays">
+                <div id="quote"><div id="clickprompt">Tap to reflect....</div></div>
+                <div id = "author"></div>
+                <div class = "answers"></div>
+            </section>
+        </div>
+    </main> 
+    
+</body>
+</html>
